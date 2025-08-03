@@ -30,10 +30,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Charles Portfolio | Full-Stack Developer",
+  title: "Charles Gao Portfolio",
   description: "Personal portfolio showcasing my work as a full-stack developer, featuring projects, skills, and experience.",
   keywords: ["portfolio", "developer", "full-stack", "web development", "React", "Next.js"],
-  authors: [{ name: "Charles" }],
+  authors: [{ name: "Charles Gao" }],
   viewport: {
     width: "device-width",
     initialScale: 1,
