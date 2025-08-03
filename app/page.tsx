@@ -27,12 +27,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container-sleek py-16">
+      <div className="max-w-xl mx-auto px-6 py-16">
         {/* Theme Toggle */}
-        <div className="absolute top-8 right-8">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-muted hover:bg-accent transition-colors"
+          className="fixed top-8 right-8 p-3 rounded-full bg-muted hover:bg-accent transition-all duration-200 hover:scale-105 z-10"
             aria-label="Toggle theme"
           >
             {isDark ? (
@@ -45,211 +44,170 @@ export default function Home() {
               </svg>
             )}
           </button>
-        </div>
 
-        {/* Header/Contact Information */}
-        <div className="section">
-          <h1 className="text-heading text-foreground mb-4">
+        {/* Header */}
+        <header className="mb-16 text-center">
+          <h1 className="text-3xl font-bold text-foreground mb-4 tracking-tight font-playfair">
             Charles Gao
           </h1>
-          <div className="text-body space-y-2">
-            <p><strong>Phone:</strong> 917-890-2058</p>
-            <p><strong>Email:</strong> <a href="mailto:csgao@usc.edu" className="link">csgao@usc.edu</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/csgao/" className="link" target="_blank" rel="noopener noreferrer">linkedin.com/in/csgao/</a></p>
+          <p className="text-sm text-muted-foreground leading-relaxed mx-auto max-w-md font-light">
+            I'm an engineer interested in AI/ML and design. I'm currently based in SF, working 
+            on engineering at Mercor. I write occasionally.
+          </p>
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <a href="mailto:csgao@usc.edu" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Writing
+            </a>
+            <a href="https://linkedin.com/in/csgao/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/csgao" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
           </div>
-        </div>
+        </header>
 
-        {/* Education Section */}
-        <div className="section">
-          <h2 className="text-subheading text-foreground mb-6">EDUCATION</h2>
+                {/* Experience Section */}
+        <section className="mb-12">
+          <h2 className="text-lg font-light text-foreground mb-6 tracking-tight">Work</h2>
           
-          <div className="space-y-6">
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#dc2626'}}>
-                  <span className="text-white font-bold text-sm">USC</span>
-                </div>
-                <div className="work-content">
-                  <div className="work-title">Presidential Scholar</div>
-                  <div className="work-company">University of Southern California</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    B.S. in Cognitive Science and AI • Los Angeles, CA • Aug. 2024 – June 2027
-                  </div>
+          <div className="divide-y divide-border/30">
+            <div className="flex items-center gap-3 py-2 first:pt-0">
+              <div className="w-7 h-7 bg-green-600 rounded-md flex items-center justify-center flex-shrink-0">
+                <div className="w-3.5 h-3.5 bg-white rounded-sm flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 bg-green-600 rounded-xs"></div>
                 </div>
               </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• USC merit-based half-tuition scholarship</p>
-                <p>• Cumulative GPA: 3.7/4.0 | Honors: Dean's List</p>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Growth</h3>
+                    <span className="text-xs text-foreground/60">Engineering, AI</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    2025
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#1e40af'}}>
-                  <span className="text-white font-bold text-sm">PE</span>
+                                    <div className="flex items-center gap-3 py-2">
+              <div className="w-7 h-7 bg-gray-900 rounded-md flex items-center justify-center flex-shrink-0">
+                <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 1v6m0 10v6m11-7h-6m-10 0H1"/>
+                </svg>
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Engineering</h3>
+                    <span className="text-xs text-foreground/60">Engineering, AI</span>
                 </div>
-                <div className="work-content">
-                  <div className="work-title">High School Diploma</div>
-                  <div className="work-company">Phillips Exeter Academy</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    Exeter, NH • Sep. 2021 – June 2024
+                  <div className="text-xs text-foreground/60">
+                    2025
                   </div>
                 </div>
               </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• SAT Scores: Math 790 | Reading & Writing 790 | National Merit Scholar | Highest Academic Honors</p>
-                <p>• Relevant Coursework: Quantum Mechanics, Multivariable Calculus, Statistical Thermodynamics, Modern Physics, Genetics</p>
+            </div>
+
+                                                            <div className="flex items-center gap-3 py-2">
+              <div className="w-7 h-7 bg-black rounded-md flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">LL</span>
+                </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Developer</h3>
+                    <span className="text-xs text-foreground/60">Full-time</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    2025
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                                    <div className="flex items-center gap-3 py-2">
+              <div className="w-7 h-7 bg-purple-600 rounded-md flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">K</span>
+                </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Engineering</h3>
+                    <span className="text-xs text-foreground/60">Part-time</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    2024-25
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 py-2 last:pb-0">
+              <div className="w-7 h-7 bg-purple-700 rounded-md flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">NYU</span>
+                </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Research Intern</h3>
+                    <span className="text-xs text-foreground/60">Research, Engineering</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    2023
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Professional Experience Section */}
-        <div className="section">
-          <h2 className="text-subheading text-foreground mb-6">PROFESSIONAL EXPERIENCE</h2>
+                        {/* Education Section */}
+        <section className="mb-12">
+          <h2 className="text-lg font-light text-foreground mb-6 tracking-tight">Education</h2>
           
-          <div className="space-y-6">
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#16a34a'}}>
-                  <span className="text-white font-bold text-sm">LL</span>
+                    <div className="divide-y divide-border/30">
+            <div className="flex items-center gap-3 py-2 first:pt-0">
+              <div className="w-7 h-7 bg-red-600 rounded-md flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xs">USC</span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">University of Southern California</h3>
+                    <span className="text-xs text-foreground/60">B.S. in Cognitive Science and AI</span>
                 </div>
-                <div className="work-content">
-                  <div className="work-title">Growth</div>
-                  <div className="work-company">Lightweight Labs</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    San Francisco, CA • June. 2024 – July. 2025
+                  <div className="text-xs text-foreground/60">
+                    2024-27
                   </div>
                 </div>
-              </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• Worked directly under founders David Yang (Founder of Fullstack Academy) and Aaron Iba (Founder of Etherpad, ex-YC GP) leading redesign and growth of accounting company.</p>
-                <p>• Led baseline redesign of frontend and spearheaded demand generation engine.</p>
               </div>
             </div>
 
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#7c3aed'}}>
-                  <span className="text-white font-bold text-sm">K</span>
-                </div>
-                <div className="work-content">
-                  <div className="work-title">Growth, Principal Software Engineer</div>
-                  <div className="work-company">Kardn</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    San Francisco, CA • Oct. 2024 – Feb. 2025
+                        <div className="flex items-center gap-3 py-2 last:pb-0">
+              <div className="w-7 h-7 bg-blue-800 rounded-md flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xs">PE</span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Phillips Exeter Academy</h3>
+                    <span className="text-xs text-foreground/60">High School Diploma</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    2021-24
                   </div>
                 </div>
-              </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• Developed and led a strategic go-to-market plan for AI startup, leveraging data-driven analysis to uncover revenue streams and optimize market penetration.</p>
-                <p>• Directed a rollout of a browser application (React, Next.js), ensuring alignment between product and client.</p>
-              </div>
-            </div>
-
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#0891b2'}}>
-                  <span className="text-white font-bold text-sm">NYU</span>
-                </div>
-                <div className="work-content">
-                  <div className="work-title">AI Researcher</div>
-                  <div className="work-company">NYU Langone Health</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    New York City, NY • June. 2023 – Nov. 2023
-                  </div>
-                </div>
-              </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• Engineered and optimized NLP models (Doc2Vec, BioBERT) to predict early termination of clinical trials, using deep learning frameworks to enable risk assessments and financial analysis of clinical trials.</p>
-                <p>• Developed data pipelines to preprocess and synthesize datasets from clinicaltrials.gov, isolating key risk factors for trial discontinuation and delivering semantic insights through feature engineering and predictive analytics.</p>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Founding Experience Section */}
-        <div className="section">
-          <h2 className="text-subheading text-foreground mb-6">FOUNDING EXPERIENCE</h2>
-          
-          <div className="space-y-6">
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#ea580c'}}>
-                  <span className="text-white font-bold text-sm">R</span>
-                </div>
-                <div className="work-content">
-                  <div className="work-title">Engineering, Founding Team</div>
-                  <div className="work-company">Robust</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    New York, NY • May. 2025 – July. 2025
-                  </div>
-                </div>
-              </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• Co-led product development and ideation.</p>
-                <p>• Helped jumpstart operations for the Summer - pre-seed led by Z Fellows and Link Ventures.</p>
-              </div>
-            </div>
-
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#dc2626'}}>
-                  <span className="text-white font-bold text-sm">LL</span>
-                </div>
-                <div className="work-content">
-                  <div className="work-title">Co-Founder, Developer</div>
-                  <div className="work-company">LavaLab @ USC</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    Los Angeles, CA • Jan. 2025 – May. 2025
-                  </div>
-                </div>
-              </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• Built Trifect, a ML-based 3PL Matchmaking Company at USC's premier startup incubator.</p>
-                <p>• Pitched to a board of investors and leaders in the transportation and logistics industry.</p>
-              </div>
-            </div>
-
-            <div>
-              <div className="work-card">
-                <div className="work-icon" style={{backgroundColor: '#0d9488'}}>
-                  <span className="text-white font-bold text-sm">WP</span>
-                </div>
-                <div className="work-content">
-                  <div className="work-title">Captain of Varsity Water Polo, 3-Time All-American Athlete</div>
-                  <div className="work-company">Phillips Exeter Academy and Greenwich Aquatics</div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    Exeter, NH and Greenwich, CT • Sep. 2023 – Jun. 2024
-                  </div>
-                </div>
-              </div>
-              <div className="text-body mt-2 ml-16">
-                <p>• Guided team to a 2nd-place finish in the New England Preparatory School Athletic Council (NEPSAC).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Technical Skills Section */}
-        <div className="section">
-          <h2 className="text-subheading text-foreground mb-6">TECHNICAL SKILLS</h2>
-          
-          <div className="text-body space-y-4">
-            <p>
-              <strong>Languages:</strong> Python, C/C++, Java, Clojure
-            </p>
-            <p>
-              <strong>Frameworks:</strong> React, Node.js, LangChain
-            </p>
-            <p>
-              <strong>Developer Tools:</strong> Git, Cursor, VS Code, Visual Studio
-            </p>
-            <p>
-              <strong>Libraries:</strong> Pytorch, pandas, NumPy, Matplotlib, scikit-learn
-            </p>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
