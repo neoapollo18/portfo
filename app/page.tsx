@@ -77,10 +77,10 @@ export default function Home() {
 
                 {/* Experience Section */}
         <section className="mb-12">
-          <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Work</h2>
+          <h2 className="text-lg font-200 text-foreground mb-2 tracking-tight">Work</h2>
           
-          <div className="divide-y divide-border/30">
-            <div className="flex items-center gap-3 py-2 first:pt-0">
+          <div className="divide-y divide-border/60">
+            <div className="flex items-center gap-3 py-2">
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/blackl.jpg"
@@ -189,10 +189,10 @@ export default function Home() {
 
                         {/* Education Section */}
         <section className="mb-12">
-          <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Education</h2>
+          <h2 className="text-lg font-200 text-foreground mb-2 tracking-tight">Education</h2>
           
-                    <div className="divide-y divide-border/30">
-            <div className="flex items-center gap-3 py-2 first:pt-0">
+                    <div className="divide-y divide-border/60">
+            <div className="flex items-center gap-3 py-2">
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/usc.jpg"
