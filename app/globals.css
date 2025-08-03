@@ -235,8 +235,34 @@ h1, h2, h3 {
 .container-sleek {
   max-width: 48rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   position: relative;
+}
+
+@media (min-width: 640px) {
+  .container-sleek {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Ensure text doesn't get too small on mobile */
+  .text-xs {
+    font-size: 0.75rem;
+  }
+  
+  /* Better touch targets on mobile */
+  a, button {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
 }
 
 /* Section spacing */

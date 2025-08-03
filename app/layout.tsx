@@ -34,7 +34,11 @@ export const metadata: Metadata = {
   description: "Personal portfolio showcasing my work as a full-stack developer, featuring projects, skills, and experience.",
   keywords: ["portfolio", "developer", "full-stack", "web development", "React", "Next.js"],
   authors: [{ name: "Charles" }],
-  viewport: "width=device-width, initial-scale=1",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 export default function RootLayout({

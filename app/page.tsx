@@ -27,11 +27,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-xl mx-auto px-6 py-16">
+      <div className="max-w-xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
         {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="fixed top-8 right-8 text-muted-foreground hover:text-foreground transition-colors z-10"
+            className="fixed top-4 right-4 sm:top-8 sm:right-8 text-muted-foreground hover:text-foreground transition-colors z-10 p-2 rounded-md hover:bg-muted/50"
             aria-label="Toggle theme"
           >
             {isDark ? (
@@ -47,31 +47,33 @@ export default function Home() {
 
         {/* Header */}
         <header className="mb-16 text-center">
-          <h1 className="text-4xl font-black text-foreground mb-4 tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
+          <h1 className="text-3xl sm:text-4xl font-black text-foreground mb-4 tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
             Charles Gao
           </h1>
-                      <p className="text-sm text-muted-foreground leading-relaxed mx-auto max-w-md font-light">
-              I'm an engineer interested in AI/ML and NLP. I'm currently based in LA, attending USC, and majoring in Cognitive Science & AI. Check out my{' '}
-              <a 
-                href="/Charles Gao Resume (18).pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
-              >
-                resume
-              </a>{' '}
-              or contact me at{' '}
-              <a 
-                href="mailto:csgao@usc.edu" 
-                className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
-              >
-                csgao@usc.edu
-              </a>. 
-            </p>
-                    <div className="flex items-center justify-center gap-4 mt-6 -ml-4">
-            <a href="mailto:csgao@usc.edu" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-   
-            </a>
+                      <div className="mx-auto max-w-md sm:max-w-lg px-4 sm:px-0">
+              <p className="text-sm text-muted-foreground leading-relaxed font-light">
+                I'm an engineer interested in AI/ML and NLP. I'm currently based in LA, attending USC, and majoring in Cognitive Science & AI.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed font-light mt-3">
+                Check out my{' '}
+                <a 
+                  href="/Charles Gao Resume (18).pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
+                >
+                  resume
+                </a>{' '} or contact me at{' '}
+                <a 
+                  href="mailto:csgao@usc.edu?subject=Hello%20from%20your%20portfolio" 
+                  className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
+                >
+                  csgao@usc.edu
+                </a>.
+              </p>
+            </div>
+                    <div className="flex items-center justify-center gap-4 mt-6">
+
             <a href="https://linkedin.com/in/csgao/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -279,7 +281,12 @@ export default function Home() {
               </div>
             </div>
 
-                        <div className="flex items-center gap-3 py-2 last:pb-0">
+                        <a 
+              href="https://exeter.edu/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 last:pb-0 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/phillips_exeter_academy_logo.jpg"
@@ -298,7 +305,75 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="mb-12">
+          <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Projects</h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <a 
+              href="https://github.com/neoapollo18/LM-ClinicalTrials" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">ClinicalTrials</h3>
+                  <p className="text-xs text-muted-foreground/70 font-mono">NYU Langone Health OLab</p>
+                </div>
+                <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+              Engineered NLP models (Doc2Vec, BioBERT) to predict early termination of clinical trials. 
+              </p>
+            </a>
+
+            <a 
+              href="https://github.com/neoapollo18/triage2" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">Trifect</h3>
+                  <p className="text-xs text-muted-foreground/70 font-mono">LavaLab</p>
+                </div>
+                <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                ML-driven b2b marketplace that connects 3PLs and businesses together. 
+              </p>
+            </a>
+
+            <a 
+              href="https://vrjl.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">VRJL</h3>
+                  <p className="text-xs text-muted-foreground/70 font-mono"></p>
+                </div>
+                <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                All-in-one platform where music artists and managers can register songs and manage royalties.
+              </p>
+            </a>
+
           </div>
         </section>
       </div>
