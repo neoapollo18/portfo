@@ -50,6 +50,7 @@
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
   --font-serif: var(--font-playfair);
+  --font-space-grotesk: var(--font-space-grotesk);
 }
 
 body {

@@ -47,12 +47,27 @@ export default function Home() {
 
         {/* Header */}
         <header className="mb-16 text-center">
-          <h1 className="text-3xl font-bold text-foreground mb-4 tracking-tight font-playfair">
+          <h1 className="text-4xl font-black text-foreground mb-4 tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
             Charles Gao
           </h1>
-          <p className="text-sm text-muted-foreground leading-relaxed mx-auto max-w-md font-light">
-            I'm an engineer interested in AI/ML and NLP. I'm currently based in LA, attending USC, and majoring in Cognitive Science & AI.
-          </p>
+                      <p className="text-sm text-muted-foreground leading-relaxed mx-auto max-w-md font-light">
+              I'm an engineer interested in AI/ML and NLP. I'm currently based in LA, attending USC, and majoring in Cognitive Science & AI. Check out my{' '}
+              <a 
+                href="/Charles Gao Resume (18).pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
+              >
+                resume
+              </a>{' '}
+              or contact me at{' '}
+              <a 
+                href="mailto:csgao@usc.edu" 
+                className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
+              >
+                csgao@usc.edu
+              </a>. 
+            </p>
                     <div className="flex items-center justify-center gap-4 mt-6 -ml-4">
             <a href="mailto:csgao@usc.edu" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
    
@@ -80,7 +95,12 @@ export default function Home() {
           <h2 className="text-lg font-200 text-foreground mb-2 tracking-tight">Work</h2>
           
           <div className="divide-y divide-border/60">
-            <div className="flex items-center gap-3 py-2">
+            <a 
+              href="https://lightweightlabs.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/blackl.jpg"
@@ -99,9 +119,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-                                    <div className="flex items-center gap-3 py-2">
+            <a 
+              href="https://robust.so" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/robust.jpg"
@@ -120,9 +145,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-                                                            <div className="flex items-center gap-3 py-2">
+            <a 
+              href="https://usclavalab.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/lavalab.jpg"
@@ -141,9 +171,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-                                    <div className="flex items-center gap-3 py-2">
+            <a 
+              href="https://kardn.co" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/kardn_logo.jpg"
@@ -162,9 +197,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div className="flex items-center gap-3 py-2 last:pb-0">
+            <a 
+              href="https://nyuolab.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 last:pb-0 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/nyulangonehealth_logo.jpg"
@@ -183,7 +223,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </section>
 
