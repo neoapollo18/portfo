@@ -203,7 +203,7 @@ export default function Home() {
               href="https://nyuolab.org" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-3 py-2 last:pb-0 hover:bg-muted/50 rounded-md transition-colors"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
             >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
@@ -220,6 +220,32 @@ export default function Home() {
                   </div>
                   <div className="text-xs text-foreground/60">
                     2023
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.cam.ac.uk/research" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 last:pb-0 hover:bg-muted/50 rounded-md transition-colors"
+            >
+              <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
+                <img 
+                  src="/university_of_cambridge_logo.jpg"
+                  alt="University of Cambridge"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Researcher</h3>
+                    <span className="text-xs text-foreground/60">University of Cambridge</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    2022
                   </div>
                 </div>
               </div>
