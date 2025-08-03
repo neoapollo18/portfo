@@ -260,7 +260,12 @@ export default function Home() {
           <h2 className="text-lg font-200 text-foreground mb-2 tracking-tight">Education</h2>
           
                     <div className="divide-y divide-border/60">
-            <div className="flex items-center gap-3 py-2">
+            <a 
+              href="https://usc.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
+            >
               <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img 
                   src="/usc.jpg"
@@ -279,7 +284,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
                         <a 
               href="https://exeter.edu/" 
