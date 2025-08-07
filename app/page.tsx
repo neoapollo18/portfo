@@ -358,7 +358,7 @@ export default function Home() {
             </a>
 
             <a 
-              href="https://vrjl.com" 
+              href="https://vrjl.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block p-4 sm:p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
