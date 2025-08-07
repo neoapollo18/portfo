@@ -50,28 +50,20 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-black text-foreground mb-4 tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
             Charles Gao
           </h1>
-                      <div className="mx-auto max-w-md sm:max-w-lg px-4 sm:px-0">
-              <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                I'm an engineer interested in AI/ML and NLP. I'm currently based in LA, attending USC, and majoring in Cognitive Science & AI.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed font-light mt-3">
-                Check out my{' '}
-                <a 
-                  href="/Charles Gao Resume (18).pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
-                >
-                  resume
-                </a>{' '} or contact me at{' '}
-                <a 
-                  href="mailto:csgao@usc.edu?subject=Hello%20from%20your%20portfolio" 
-                  className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
-                >
-                  csgao@usc.edu
-                </a>.
-              </p>
-            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed font-light max-w-lg mx-auto">
+              I'm an engineer interested in AI/ML and NLP. I'm currently based in LA, attending USC, and majoring in Cognitive Science & AI.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed font-light mt-4 max-w-lg mx-auto text-center">
+              Check out my <a 
+                href="/Charles Gao Resume (18).pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
+              >resume</a> or contact me at <a 
+                href="mailto:csgao@usc.edu?subject=Hello%20from%20your%20portfolio" 
+                className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
+              >csgao@usc.edu</a>.
+            </p>
                     <div className="flex items-center justify-center gap-4 mt-6">
 
             <a href="https://linkedin.com/in/csgao/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -315,27 +307,30 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section className="mb-12">
+        <section className="mb-12 px-4 sm:px-0">
           <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Projects</h2>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <a 
               href="https://github.com/neoapollo18/LM-ClinicalTrials" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="block p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
+              className="block p-4 sm:p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
             >
-              <div className="flex items-start justify-between mb-3">
-                <div>
+              <div className="flex items-start justify-between mb-3 sm:mb-3">
+                <div className="flex-1 min-w-0">
                   <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">ClinicalTrials</h3>
-                  <p className="text-xs text-muted-foreground/70 font-mono">NYU Langone Health OLab</p>
+                  <p className="text-xs text-muted-foreground/70 font-mono mb-3 sm:mb-0">NYU Langone Health OLab</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed sm:hidden">
+                    Engineered NLP models (Doc2Vec, BioBERT) to predict early termination of clinical trials. 
+                  </p>
                 </div>
                 <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-              Engineered NLP models (Doc2Vec, BioBERT) to predict early termination of clinical trials. 
+              <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">
+                Engineered NLP models (Doc2Vec, BioBERT) to predict early termination of clinical trials. 
               </p>
             </a>
 
@@ -343,18 +338,21 @@ export default function Home() {
               href="https://github.com/neoapollo18/triage2" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="block p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
+              className="block p-4 sm:p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
             >
-              <div className="flex items-start justify-between mb-3">
-                <div>
+              <div className="flex items-start justify-between mb-3 sm:mb-3">
+                <div className="flex-1 min-w-0">
                   <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">Trifect</h3>
-                  <p className="text-xs text-muted-foreground/70 font-mono">LavaLab</p>
+                  <p className="text-xs text-muted-foreground/70 font-mono mb-3 sm:mb-0">LavaLab</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed sm:hidden">
+                    ML-driven b2b marketplace that connects 3PLs and businesses together. 
+                  </p>
                 </div>
                 <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">
                 ML-driven b2b marketplace that connects 3PLs and businesses together. 
               </p>
             </a>
@@ -363,18 +361,21 @@ export default function Home() {
               href="https://vrjl.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="block p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
+              className="block p-4 sm:p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
             >
-              <div className="flex items-start justify-between mb-3">
-                <div>
+              <div className="flex items-start justify-between mb-3 sm:mb-3">
+                <div className="flex-1 min-w-0">
                   <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">VRJL</h3>
-                  <p className="text-xs text-muted-foreground/70 font-mono"></p>
+                  <p className="text-xs text-muted-foreground/70 font-mono mb-3 sm:mb-0">Personal Project</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed sm:hidden">
+                    All-in-one platform where music artists and managers can register songs and manage royalties.
+                  </p>
                 </div>
                 <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">
                 All-in-one platform where music artists and managers can register songs and manage royalties.
               </p>
             </a>
