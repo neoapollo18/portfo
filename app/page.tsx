@@ -357,29 +357,6 @@ export default function Home() {
               </p>
             </a>
 
-            <a 
-              href="https://vrjl.vercel.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block p-4 sm:p-5 border border-border/40 rounded-xl hover:border-border hover:bg-muted/30 transition-all duration-200 group"
-            >
-              <div className="flex items-start justify-between mb-3 sm:mb-3">
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">VRJL</h3>
-                  <p className="text-xs text-muted-foreground/70 font-mono mb-3 sm:mb-0">Personal Project</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed sm:hidden">
-                    All-in-one platform where music artists and managers can register songs and manage royalties.
-                  </p>
-                </div>
-                <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">
-                All-in-one platform where music artists and managers can register songs and manage royalties.
-              </p>
-            </a>
-
           </div>
         </section>
       </div>
