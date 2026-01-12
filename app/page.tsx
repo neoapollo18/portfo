@@ -55,7 +55,7 @@ export default function Home() {
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed font-light mt-4 max-w-lg mx-auto text-center">
               Check out my <a 
-                href="/Charles Gao Resume (68).pdf" 
+                href="/Charles Gao Resume (81).pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors underline decoration-dotted decoration-1 underline-offset-2 decoration-muted-foreground/40"
