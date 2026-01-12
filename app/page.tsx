@@ -308,7 +308,37 @@ export default function Home() {
 
         {/* Projects Section */}
         <section className="mb-12 px-4 sm:px-0">
-          <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Projects</h2>
+          <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Active Projects</h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <a 
+              href="https://apps.shopify.com/glimpse-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-4 sm:p-5 border-2 border-blue-500/30 bg-blue-500/5 rounded-xl hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-200 group"
+            >
+              <div className="flex items-start justify-between mb-3 sm:mb-3">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">Gleame</h3>
+                  <p className="text-xs text-muted-foreground/70 font-mono mb-3 sm:mb-0">Shopify</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed sm:hidden">                   
+                  Glimpse is a Shopify-native visual merchandising platform built on React with TypeScript, leveraging Google's Gemini API.
+                  </p>
+                </div>
+                <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">            
+              Glimpse is a Shopify-native visual merchandising platform built on React with TypeScript, leveraging Google’s Gemini API.
+              </p>
+            </a>
+          </div>
+        </section>
+
+                {/* Past Projects Section */}
+                <section className="mb-12 px-4 sm:px-0">
+          <h2 className="text-lg font-200 text-foreground mb-6 tracking-tight">Past Projects</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <a 
@@ -356,6 +386,7 @@ export default function Home() {
                 ML-driven b2b marketplace that connects 3PLs and businesses together. 
               </p>
             </a>
+
 
           </div>
         </section>
