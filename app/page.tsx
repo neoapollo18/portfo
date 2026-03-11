@@ -312,7 +312,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <a 
-              href="https://apps.shopify.com/glimpse-app" 
+              href="https://apps.shopify.com/gleame" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block p-4 sm:p-5 border-2 border-blue-500/30 bg-blue-500/5 rounded-xl hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-200 group"
@@ -322,7 +322,7 @@ export default function Home() {
                   <h3 className="text-base font-medium text-foreground group-hover:text-foreground mb-1">Gleame</h3>
                   <p className="text-xs text-muted-foreground/70 font-mono mb-3 sm:mb-0">Shopify</p>
                   <p className="text-sm text-muted-foreground leading-relaxed sm:hidden">                   
-                  Glimpse is a Shopify-native visual merchandising platform built on React with TypeScript, leveraging Google's Gemini API.
+                  Gleame is a Shopify-native visual merchandising platform built on React with TypeScript, leveraging Google's Gemini API.
                   </p>
                 </div>
                 <svg className="w-4 h-4 text-muted-foreground/60 group-hover:text-foreground transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -330,7 +330,7 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">            
-              Glimpse is a Shopify-native visual merchandising platform built on React with TypeScript, leveraging Google’s Gemini API.
+              Gleame is a Shopify-native visual merchandising platform built on React with TypeScript, leveraging Google’s Gemini API.
               </p>
             </a>
           </div>
