@@ -90,6 +90,32 @@ export default function Home() {
           
           <div className="divide-y divide-border/60">
             <a 
+              href="https://salesforce.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
+            >
+              <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
+                <img 
+                  src="/salesforce_logo-1.jpg"
+                  alt="Salesforce"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-normal text-foreground">Engineering</h3>
+                    <span className="text-xs text-foreground/60">Salesforce</span>
+                  </div>
+                  <div className="text-xs text-foreground/60">
+                    May 2026
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a 
               href="https://lightweightlabs.com" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -108,32 +134,6 @@ export default function Home() {
                     <h3 className="text-sm font-normal text-foreground">Growth</h3>
                     <span className="text-xs text-foreground/60">Lightweight Labs</span>
                   </div>
-                  <div className="text-xs text-foreground/60">
-                    2025
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a 
-              href="https://robust.so" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
-            >
-              <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
-                <img 
-                  src="/robust.jpg"
-                  alt="Robust"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <h3 className="text-sm font-normal text-foreground">Engineering</h3>
-                    <span className="text-xs text-foreground/60">Robust</span>
-                </div>
                   <div className="text-xs text-foreground/60">
                     2025
                   </div>
@@ -162,32 +162,6 @@ export default function Home() {
                   </div>
                   <div className="text-xs text-foreground/60">
                     2025
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a 
-              href="https://kardn.co" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 py-2 hover:bg-muted/50 rounded-md transition-colors"
-            >
-              <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0 overflow-hidden">
-                <img 
-                  src="/kardn_logo.jpg"
-                  alt="Kardn"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <h3 className="text-sm font-normal text-foreground">Engineering</h3>
-                    <span className="text-xs text-foreground/60">Kardn</span>
-                  </div>
-                  <div className="text-xs text-foreground/60">
-                    2024-25
                   </div>
                 </div>
               </div>
